@@ -7,8 +7,8 @@ finetune_lr (float): The lr rate to finetune. Usually, we directly use the lr
     rate of the pretrain.
 """
 
-_base_ = './group_fisher_act_prune_retinanet_r50_fpn_1x_coco.py'
-pruned_path = 'https://download.openmmlab.com/mmrazor/v1/pruning/group_fisher/retinanet/act/group_fisher_act_prune_retinanet_r50_fpn_1x_coco.pth'  # noqa
+_base_ = '/home/dalekseenko/CV_Restaurant/cv/src/cv_api/detection/mmlab/mmrazor_rest/configs/pruning/mmdet/group_fisher/rtmdet/group_fisher_act_prune_rtmdet_fpn_1x_coco.py'
+pruned_path = '/home/dalekseenko/CV_Restaurant/cv/src/cv_api/detection/mmlab/work_dirs/group_fisher_act_prune_rtmdet_fpn_1x_coco/best_coco_bbox_mAP_epoch_292.pth'  # noqa
 finetune_lr = 0.005
 ##############################################################################
 algorithm = _base_.model
