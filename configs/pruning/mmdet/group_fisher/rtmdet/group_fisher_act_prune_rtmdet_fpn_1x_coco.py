@@ -17,8 +17,8 @@ target_flop_ratio (float): The target flop ratio to prune your model.
 input_shape (Tuple): input shape to measure the flops.
 """
 
-_base_ = '/home/dalekseenko/CV_Restaurant/cv/src/cv_api/detection/mmlab/mmyolo_rest/configs/rtmdet/rtmdet_l_phones.py'
-pretrained_path = 'mmyolo_rest/work_dirs/rtmdet_l_phones/epoch_300.pth'  # noqa
+_base_ = '/home/dalekseenko/CV_Restaurant/cv/src/cv_api/detection/mmlab/mmyolo_rest/configs/rtmdet/rtmdet_s_syncbn_fast_8xb32-300e_coco.py'
+pretrained_path = '/home/dalekseenko/CV_Restaurant/cv/src/cv_api/detection/mmlab/mmyolo_rest/work_dirs/rtmdet_s_syncbn_fast_8xb32-300e_coco/best_coco_bbox_mAP_epoch_299.pth'  # noqa
 
 interval = 10
 normalization_type = 'act'
